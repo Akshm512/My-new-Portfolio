@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
 import ParticlesBackground from '../components/ParticlesBackground'
+import kapil from "../assets/kapil2.jpg";
 
 const About = () => {
   
@@ -46,7 +47,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img
-              src="/kapil2.jpg"   
+              src={kapil}  
               alt="Kapil Chandane"
               className="w-full h-full object-cover"
             />

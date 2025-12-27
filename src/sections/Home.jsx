@@ -4,6 +4,9 @@ import { hover, motion, scale } from 'framer-motion'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { href } from 'react-router-dom'
 import { a, filter } from 'framer-motion/client'
+import avatarImg from "../assets/avator.png";
+
+
 
 const Home = () => {
 
@@ -137,7 +140,7 @@ const Home = () => {
                 className='inline-block mt-8 px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-all duration-300'>
                 View My Projects </a>
 
-              <a href="/Kapil_Chandane_Resume.pdf" download className='inline-block mt-8 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:scale-105 transition-all duration-300'>My Resume</a>
+              <a href={`${import.meta.env.BASE_URL}Kapil_Chandane_Resume.pdf`} download className='inline-block mt-8 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:scale-105 transition-all duration-300'>My Resume</a>
 
             </motion.div>
             <div className=' mt-10 flex - gap-5 text-2xl md:text-3xl justify-center lg:justify-start'>
@@ -168,7 +171,7 @@ const Home = () => {
         <div className='relative hidden lg:block'>
           <div className='absolute top-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-[100px] opacity-30'></div>
           <motion.img
-            src="/src/assets/avator.png"
+            src={avatarImg}
             alt="kapil chandane"
             className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
             style={{ right: "-30px", width: "min(45vw,700px)", maxHeight: "90vh" }}

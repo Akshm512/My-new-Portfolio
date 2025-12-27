@@ -1,4 +1,7 @@
 import React from "react";
+import AMS from "../assets/AMS.jpg";
+import IMS from "../assets/IMS.jpg";
+import Ecom from "../assets/Ecom.jpg";
 
 const Projects = () => {
   return (
@@ -21,7 +24,7 @@ const Projects = () => {
                         transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
           <img
-            src="/AMS.jpg"
+            src={AMS}
             alt="AttendSys"
             className="h-48 w-full object-cover"
           />
@@ -68,7 +71,7 @@ const Projects = () => {
                         transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
           <img
-            src="/IMS.jpg"
+            src={IMS}
             alt="Inventory Management"
             className="h-48 w-full object-cover"
           />
@@ -112,7 +115,7 @@ const Projects = () => {
                         transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
           <img
-            src="/Ecom.jpg"
+            src={Ecom}
             alt="E-Commerce App"
             className="h-48 w-full object-cover"
           />
